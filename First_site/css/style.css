@@ -1,0 +1,270 @@
+
+body {
+    font-family: sans-serif;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1024px;
+}
+header {
+ border-bottom: 1px gray solid;
+}
+.headerBlock {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+.headerMenu ul {
+    display: flex;
+    margin: 30px 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+.headerMenu ul li {
+    display: flex;
+    list-style-type: none;
+    margin: 10px;
+}
+.headerMenu ul li a{
+    text-decoration: none;
+    margin: 5px 15px;
+    font-size: 20px;
+    color: #373737;
+}
+.headerMenu__item:hover {
+    cursor: pointer;
+    background: #373737;
+}
+
+.headerMenu__item:hover a {
+    color: white;
+}
+
+ .logo {
+     margin-left: 10px;
+ }
+
+
+/*Main content Articleblock*/
+
+.mainBunner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.mainBunnerTextblock {
+    margin-left: 10px;
+    margin-top: 70px;
+    }
+.mainBunner__title {
+    color: #373737;
+    font-size: 45px;
+    font-weight: normal;
+    margin: 0;
+}
+.mainBunner__subTitle {
+    color: #373737;
+    font-size: 35px;
+    margin: 5px 0 10px 0;
+}
+.mainBunner_userAction {
+    display: flex;
+    background: #373737;
+    width: 200px;
+
+}
+.userAction__icon {
+    width: 30px;
+    height: 20px;
+    margin: 10px 10px 5px 10px;
+    }
+.userAction__text {
+    font-size: 20px;
+    margin: 5px;
+    color: white;
+}
+.mainBunnerTextblock a{
+    text-decoration: none;
+}
+.mainBunnerImgContent {
+    display: flex;
+    width: 640px;
+    height: 350px;
+}
+
+/*Main content block*/
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: #373737;
+
+}
+.mainArticle{
+    display: flex;
+    flex-wrap: wrap;
+}
+.articlesBlock {
+    width: 70%;
+    padding-right: 25px;
+}
+
+.mainArticle__img {
+    width: 40%;
+    margin-right: 25px;
+    min-width: 200px;
+}
+.mainArticleManager img {
+    width: auto;
+}
+.mainArticle__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 55%;
+}
+.mainArticleManager__leftArrow {
+     width: 30px;
+    height: 40px;
+    background: #858282;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content1 {
+    margin: 0;
+}
+
+.mainArticleManager__rightArrow {
+    width: 30px;
+    height: 40px;
+    background: #b4b5b0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainArticleManager {
+    display: flex;
+    margin-left: auto;
+}
+
+/*Main content Article*/
+.Article {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.Article1 {
+    width: 31%;
+    margin-top: 30px;
+    min-width: 200px ;
+}
+h2 {
+    color: #575454;
+    font-weight: normal
+}
+p {
+    color: #575454;
+    font-size: 15px;
+}
+
+/*siteBar */
+
+.siteBar {
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.siteBar2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.siteBar3 {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: #c12164 6px solid;
+    justify-content: center;
+    background: #373737;
+}
+input {
+    width: 240px;
+   margin: 5px;
+    padding: 5px;
+}
+button {
+    width: 180px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    height: 35px;
+    background: #c12164;
+    color: #dfcfd6;
+    border-radius: 5px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: deeppink;
+}
+.siteBarText1 {
+    display: flex;
+    width: 200px;
+    height: 20px;
+    color: white;
+    justify-content: center;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.siteBarText2 {
+    display: flex;
+    width: 250px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+/*ПОДВАЛ*/
+.Footer {
+    background: #373737;
+    height: 100px;
+}
+.FooterText {
+    color: white;
+    margin-top: 35px;
+    font-size: 15px;
+}
+.FooterBox {
+    display: flex;
+    height: 100px;
+}
+.Footer1 {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+.Footer2 {
+    display: flex;
+    width: 10%;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+
+}
+.FooterIcon {
+    width: 30px;
+    height: 30px;
+    margin-top: 30px;
+}
+.FooterIcon:hover {
+    cursor: pointer;
+}
