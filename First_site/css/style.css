@@ -1,7 +1,10 @@
 
 body {
     font-family: sans-serif;
+
+
 }
+
 
 img {
     width: 100%;
@@ -11,6 +14,7 @@ img {
 .wrapper {
     margin: 0 auto;
     max-width: 1024px;
+
 }
 header {
  border-bottom: 1px gray solid;
@@ -21,6 +25,9 @@ header {
     align-items: center;
     margin-top: 10px;
     flex-wrap: wrap;
+}
+.logo {
+    margin-left: 10px;
 }
 .headerMenu ul {
     display: flex;
@@ -48,12 +55,10 @@ header {
     color: white;
 }
 
- .logo {
-     margin-left: 10px;
- }
 
 
-/*Main content Articleblock*/
+
+                                /*Main content Bunner*/
 
 .mainBunner {
     display: flex;
@@ -101,7 +106,7 @@ header {
     height: 350px;
 }
 
-/*Main content block*/
+                        /*Main content block*/
 main{
     display: flex;
     justify-content: space-between;
@@ -109,20 +114,48 @@ main{
     color: #373737;
 
 }
-.mainArticle{
-    display: flex;
-    flex-wrap: wrap;
-}
 .articlesBlock {
     width: 70%;
     padding-right: 25px;
 }
+.mainArticle{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .mainArticle__img {
     width: 40%;
+    height: 200px;
     margin-right: 25px;
     min-width: 200px;
+    background-image: url("https://us.123rf.com/450wm/bualuang123rf/bualuang123rf1709/bualuang123rf170900316/86519957-a-soft-sky-with-cloud-background-in-pastel-color-abstract-gradation-color-pastel.jpg?ver=6");
+    position: relative;
+    display: flex;
 }
+.IPad {
+    width: 60px;
+    height: auto;
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    flex-wrap: wrap;
+}
+.IMac {
+    width: 120px;
+    height: auto;
+    position: absolute;
+    bottom: 20px;
+    left: 120px;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
 .mainArticleManager img {
     width: auto;
 }
@@ -157,7 +190,7 @@ main{
     margin-left: auto;
 }
 
-/*Main content Article*/
+                    /*Main content Article*/
 .Article {
     display: flex;
     justify-content: space-between;
@@ -167,6 +200,7 @@ main{
 .Article1 {
     width: 31%;
     margin-top: 30px;
+    margin-bottom: 30px;
     min-width: 200px ;
 }
 h2 {
@@ -178,7 +212,7 @@ p {
     font-size: 15px;
 }
 
-/*siteBar */
+                                /*siteBar */
 
 .siteBar {
     width: 30%;
@@ -186,36 +220,133 @@ p {
     display: flex;
     flex-direction: column;
 }
-.siteBar2 {
-    margin-top: 20px;
-    margin-bottom: 20px;
+
+
+
+.siteBar1 {
+    position: relative;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #9b9b9b;
 }
+.siteBar1Text1 {
+     margin-bottom: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    font-size: 18px;
+    color: #7b7b7b;
+ }
+.siteBar1Text2 {
+    margin-top: 5px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #7cc542;
+}
+.Layer25{
+    position: absolute;
+    bottom: 10px;
+    left: 40px;
+}
+.Layer25copy{
+    position: absolute;
+    bottom: 5px;
+    left: 110px;
+
+}
+.Layer26{
+    position: absolute;
+    right: 30px;
+    bottom: 5px;
+}
+
+
+
+
+.siteBar2 {
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    background: #76fffa;
+}
+.circleNAmber {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #d62473;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 5px white solid;
+
+}
+.circleNAmber12{
+    font-size: 60px;
+    color: white;
+    margin: 0;
+}
+.circleNAmberweek {
+    font-size: 15px;
+    color: white;
+    margin: -5px 0 0 0;
+}
+.mainBlock__content{
+    margin-top: 85px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.mainBlock__contentText1 {
+    font-size: 35px;
+    margin: 0;
+    font-weight: normal;
+    color: white;
+}
+.mainBlock__contentText2 {
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 18px;
+    width: 180px;
+    color: white;
+}
+.button1 {
+    width: 180px;
+    height: 35px;
+    background: #16dce1;
+    color: white;
+    border-radius: 7px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.button1:hover {
+    background-color: #49c5ff;
+}
+
+
+
+
 .siteBar3 {
     display: flex;
     flex-wrap: wrap;
     border-bottom: #c12164 6px solid;
     justify-content: center;
     background: #373737;
-}
-input {
-    width: 240px;
-   margin: 5px;
-    padding: 5px;
-}
-button {
-    width: 180px;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    height: 35px;
-    background: #c12164;
-    color: #dfcfd6;
-    border-radius: 5px;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-}
-button:hover {
-    background-color: deeppink;
+    height: auto;
 }
 .siteBarText1 {
     display: flex;
@@ -234,7 +365,28 @@ button:hover {
     justify-content: center;
     align-items: center;
 }
-/*ПОДВАЛ*/
+input {
+    width: 240px;
+    margin: 5px;
+    padding: 5px;
+}
+.button2 {
+    width: 180px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    height: 35px;
+    background: #c12164;
+    color: #dfcfd6;
+    border-radius: 7px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+.button2:hover {
+    background-color: deeppink;
+}
+
+                                /*ПОДВАЛ*/
 .Footer {
     background: #373737;
     height: 100px;
