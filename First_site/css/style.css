@@ -1,10 +1,10 @@
 
 body {
     font-family: sans-serif;
-
-
 }
-
+.flexible {
+    max-width: 100%;
+}
 
 img {
     width: 100%;
@@ -24,7 +24,7 @@ header {
     display: flex;
     align-items: center;
     margin-top: 10px;
-    flex-wrap: wrap;
+
 }
 .logo {
     margin-left: 10px;
@@ -33,7 +33,7 @@ header {
     display: flex;
     margin: 30px 0;
     padding: 0;
-    flex-wrap: wrap;
+
 }
 .headerMenu ul li {
     display: flex;
@@ -62,13 +62,13 @@ header {
 
 .mainBunner {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 100px;
 }
 .mainBunnerTextblock {
     margin-left: 10px;
     margin-top: 70px;
+    width: 40%;
     }
 .mainBunner__title {
     color: #373737;
@@ -102,8 +102,8 @@ header {
 }
 .mainBunnerImgContent {
     display: flex;
-    width: 640px;
-    height: 350px;
+    width: 60%;
+    height: auto;
 }
 
                         /*Main content block*/
@@ -120,11 +120,11 @@ main{
 }
 .mainArticle{
     display: flex;
-    flex-wrap: wrap;
+
 }
 
 .mainArticle__img {
-    width: 40%;
+    min-width: 270px;
     height: 200px;
     margin-right: 25px;
     position: relative;
@@ -137,17 +137,20 @@ main{
     display: flex;
 }
 .IPad {
-    width: 60px;
-    height: auto;
     position: absolute;
+    max-width: 60px;
+    height: auto;
+
     bottom: 20px;
-    left: 40px;
+    left: 30px;
     z-index: 1;
 }
 .IMac {
-    width: 120px;
-    height: auto;
     position: absolute;
+    max-width: 120px;
+    min-width: auto;
+    height: auto;
+
     bottom: 20px;
     left: 120px;
     z-index: 1;
@@ -197,8 +200,9 @@ main{
                     /*Main content Article*/
 .Article {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
+width: 100%;
 
 }
 .Article1 {
@@ -206,6 +210,7 @@ main{
     margin-top: 30px;
     margin-bottom: 30px;
     min-width: 200px ;
+
 }
 h2 {
     color: #575454;
@@ -217,7 +222,12 @@ p {
 }
 
                                 /*siteBar */
-
+.imgSitebar {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
 .siteBar {
     width: 30%;
     height: auto;
@@ -423,4 +433,186 @@ input {
 }
 .FooterIcon:hover {
     cursor: pointer;
+}
+@media screen and (max-width: 800px) {
+    .headerBlock {
+        width: 500px;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+    .logo {
+        width: 200px;
+        margin: 0 auto;
+    }
+    .headerMenu  {
+        width: 100%;
+
+    }
+    .headerMenu ul {
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .mainBunner {
+        width: 500px;
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .mainBunnerTextblock {
+        width: 100%;
+    }
+    .mainBunner__title {
+        justify-content: center;
+        display: flex;
+    }
+    .mainBunner__subTitle {
+        justify-content: center;
+        display: flex;
+    }
+    .mainBunner_userAction {
+        margin: 0 auto;
+
+    }
+      .mainBunnerImgContent {
+        width: 100%;
+          height: auto;
+          margin-top: 10px;
+    }
+      main{
+          flex-wrap: wrap;
+          padding-left: 25px;
+      }
+      .articlesBlock {
+          width: 100%;
+
+      }
+      .siteBar {
+          width: 100%;
+          align-items: center;
+          flex-wrap: wrap;
+      }
+      .siteBar1 {
+          width: 300px;
+      }
+      .siteBar2 {
+          width: 300px;
+      }
+      .siteBar3 {
+          width: 300px;
+          margin-bottom: 10px;
+      }
+      .FooterBox {
+          flex-wrap: wrap;
+      }
+      .Footer1 {
+          width: 100%;
+      }
+      .FooterText {
+          margin-top: 20px;
+      }
+      .Footer2 {
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+      }
+      .FooterIcon {
+          margin: 0 15px;
+      }
+}
+@media screen and (max-width: 550px) {
+    .headerBlock {
+        width: 320px;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+    .logo {
+        width: 200px;
+        margin: 0 auto;
+    }
+    .headerMenu  {
+        width: 100%;
+
+    }
+    .headerMenu ul {
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .mainBunner {
+        width: 320px;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    .mainBunnerTextblock {
+        width: 320px;
+    }
+    .mainBunnerImgContent {
+        width: 100%;
+        height: 300px;
+        margin-top: 10px;
+    }
+    main{
+        flex-wrap: wrap;
+        padding-left: 0;
+    }
+    .articlesBlock {
+        padding: 0 10px;
+    }
+    .mainArticle {
+        flex-wrap: wrap;
+    }
+    .mainArticle__img {
+        width: 100%;
+    }
+    .img1 {
+        width: 320px;
+    }
+    .mainArticle__content {
+         width: 100%;
+        border: 1px black solid;
+        margin-top: 10px;
+    }
+    .Article1 {
+        width: 100%;
+        margin: 15px 0;
+        border: 1px black solid;
+    }
+    .Article1 h2, p {
+        padding-left: 20px;
+    }
+
+    .siteBar {
+        width: 100%;
+        align-items: center;
+        flex-wrap: wrap;
+
+    }
+    .siteBar1 {
+        width: 300px;
+    }
+    .siteBar2 {
+        width: 300px;
+    }
+    .siteBar3 {
+        width: 300px;
+        margin-bottom: 10px;
+    }
+    .FooterBox {
+        flex-wrap: wrap;
+        width: 100%;
+        margin-right: 0;
+        justify-content: center;
+    }
+    .Footer1 {
+        width: 320px;
+
+    }
+    .Footer2 {
+        width: 320px;
+        align-items: center;
+        justify-content: center;
+    }
+    .FooterIcon {
+        margin: 0 15px;
+    }
 }
