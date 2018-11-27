@@ -1,4 +1,6 @@
-
+* {
+    margin: 0;
+}
 body {
     font-family: sans-serif;
 }
@@ -26,8 +28,12 @@ header {
     margin-top: 10px;
 
 }
+
 .logo {
     margin-left: 10px;
+}
+label, #dws_menu {
+    display: none;
 }
 .headerMenu ul {
     display: flex;
@@ -150,7 +156,6 @@ main{
     max-width: 120px;
     min-width: auto;
     height: auto;
-
     bottom: 20px;
     left: 120px;
     z-index: 1;
@@ -434,11 +439,25 @@ input {
 .FooterIcon:hover {
     cursor: pointer;
 }
+
+
+
+@media screen and (max-width: 890px) {
+    .Article1 {
+        width: calc(100%/2 - 10px);
+        margin-top: 30px;
+        margin-bottom: 30px;
+        min-width: 200px;
+        padding-right: 10px;
+
+    }
+}
+
 @media screen and (max-width: 800px) {
     .headerBlock {
         width: 500px;
         flex-wrap: wrap;
-        margin: 0 auto;
+        margin: 15px auto;
     }
     .logo {
         width: 200px;
@@ -461,6 +480,8 @@ input {
     }
     .mainBunnerTextblock {
         width: 100%;
+        margin-left: 0;
+        margin-top: 30px;
     }
     .mainBunner__title {
         justify-content: center;
@@ -520,23 +541,66 @@ input {
           margin: 0 15px;
       }
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 650px) {
+    .Article1 {
+        width: calc(100%/2 - 10px);
+        margin-top: 30px;
+        margin-bottom: 30px;
+        min-width: 200px;
+        padding-right: 10px;
+
+    }
+}
+@media screen and (max-width: 500px) {
     .headerBlock {
         width: 320px;
         flex-wrap: wrap;
-        margin: 0 auto;
+        margin: 15px auto;
+        display: block;
     }
+
     .logo {
         width: 200px;
         margin: 0 auto;
     }
-    .headerMenu  {
-        width: 100%;
-
-    }
-    .headerMenu ul {
-        margin: 0 auto;
+    label {
+        display: block;
+        width: 30px;
+        height: 30px;
         justify-content: center;
+    }
+
+    label:hover {
+        cursor: pointer;
+    }
+    .leb_menu {
+        width: 30px;
+        position: relative;
+        left: 145px;
+    }
+    .headerMenu  {
+        width: 320px;
+        position: relative;
+        justify-content: center;
+        display: none;
+    }
+ #dws_menu:checked ~ .headerMenu {
+     display: block;
+ }
+
+    .headerMenu ul {
+        flex-direction: column;
+    }
+    .headerMenu li {
+        border: #373737 1px solid;
+        border-radius: 15px;
+    }
+    .headerMenu__item {
+        justify-content: center;
+    }
+
+    .headerMenu a:hover{
+        background: #373737;
     }
     .mainBunner {
         width: 320px;
@@ -562,10 +626,10 @@ input {
         flex-wrap: wrap;
     }
     .mainArticle__img {
-        width: 100%;
+
     }
-    .img1 {
-        width: 320px;
+    .content1 {
+        margin: 10px 20px;
     }
     .mainArticle__content {
          width: 100%;
@@ -578,7 +642,10 @@ input {
         border: 1px black solid;
     }
     .Article1 h2, p {
-        padding-left: 20px;
+        padding: 5px 20px;
+    }
+     .mainBlock__contentText2, .siteBarText2 {
+        padding-left: 0;
     }
 
     .siteBar {
@@ -611,6 +678,7 @@ input {
         width: 320px;
         align-items: center;
         justify-content: center;
+        margin-bottom: 10px;
     }
     .FooterIcon {
         margin: 0 15px;
