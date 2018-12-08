@@ -1,0 +1,29 @@
+
+html, body {
+    height: 100%;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+
+.imgWrapper {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    border: 2px solid black;
+}
+
+.imgWrapper::after {
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(127, 255, 212, 0.56);
+    transition: background 5s;
+    position: absolute;
+
+}
+
